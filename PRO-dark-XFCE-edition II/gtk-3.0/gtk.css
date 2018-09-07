@@ -13275,7 +13275,7 @@ checkbutton label:not(:only-child):last-child{
 				  0px  1px alpha(#202020, 0.5),
 				  0px  2px alpha(#202020, 0.05);
 }
-
+#whiskermenu-window entry,
 #whiskermenu-window entry:focus {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -13429,32 +13429,44 @@ XfceHeading {
   /*padding: 3px;*/ }
 
 #XfceNotifyWindow {
-  background-color: shade(#686868 0.3);
-  color: #fcfcfc;
-  border-color: shade(#686868, 0.4); }
-  #XfceNotifyWindow buttonbox {
-    padding: 0; }
-  #XfceNotifyWindow button {
-    background-image: none;
-    border-color: shade(#fcfcfc, 0.35);
-    border-radius: 3px;
-    box-shadow: none; }
-  #XfceNotifyWindow label#summary {
-    font-weight: bold; }
-  #XfceNotifyWindow progressbar {
-    min-height: 6px;
-    border-radius: 3px; }
-    #XfceNotifyWindow progressbar progress {
-      background-image: none;
-      background-color: #fcfcfc;
-      border: none;
-      box-shadow: none; }
-    #XfceNotifyWindow progressbar trough {
-      background-image: linear-gradient(to bottom, shade(#686868, 0.65), shade(#686868, 1.25));
-      border: 1px solid shade(#686868, 0.2);
-      border-radius: 3px;
-      padding: 1px 0; }
+    background-color: shade(#46484f, 0.8);
+    color: #fcfcfc;
+    border: 1px solid shade(#46484f, 0.8);
+}
 
+#XfceNotifyWindow button {
+    background-image: none;
+    background-color: #46484f;
+    color: #fcfcfc;
+    border-color: #fcfcfc;
+    border-radius: 3px;
+}
+
+#XfceNotifyWindow label#summary {
+    font-weight: bold;
+}
+
+#XfceNotifyWindow progressbar {
+    min-height: 6px;
+    border-radius: 3px;
+}
+
+#XfceNotifyWindow progressbar progress {
+    background-image: none;
+    background-color: #fcfcfc;
+    border: none;
+    box-shadow: none;
+}
+
+#XfceNotifyWindow progressbar trough {
+    background-image: linear-gradient(to bottom,
+                                      shade(#46484f, 0.65),
+                                      shade(#46484f, 1.25)
+                                      );
+    border: 1px solid shade(#46484f, 0.2);
+    border-radius: 3px;
+    padding: 1px 0;
+}
 /*(((((((((((((((((  THUNAR CHANGES  ))))))))))))))))))))))))*/
 
 .thunar menubar{

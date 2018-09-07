@@ -13158,7 +13158,7 @@ checkbutton label:not(:only-child):last-child{
 				  0px  1px alpha(#202020, 0.5),
 				  0px  2px alpha(#202020, 0.05);
 }
-
+#whiskermenu-window entry,
 #whiskermenu-window entry:focus {
   margin-top: 4px;
   margin-bottom: 4px;
